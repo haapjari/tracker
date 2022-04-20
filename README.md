@@ -1,6 +1,6 @@
 # Tracker
 
-Tracker is a placeholder name for habit tracker project. 
+Tracker is a placeholder name for Habit Tracker Application -project.
 
 ---
 
@@ -20,12 +20,68 @@ Tracker is a placeholder name for habit tracker project.
 ## Tools
 
 - Using [GitHub CLI](https://cli.github.com/)
+- Using GitHub Issues
+- Using GitHub Actions
+- Using Semantic Versioning
 
 ---
 
-### Tracker API
+## How-to-Run
 
-- `/api/habits` - Endpoint for manipulating Habits.
-- `/api/users` - Endpoint for manipulating Users.
+- TBD
 
 ---
+
+## How-to-Develop
+
+---
+
+### API Endpoints
+
+- `/api/habits`
+- `/api/users`
+
+#### Available HTTP Commands
+
+- `GET /api/habits`
+- `GET /api/habits/:id`
+- `POST /api/habits`
+- `PUT /api/habits/:id`
+- `DELETE /api/habits/:id`
+
+- `GET /api/users`
+- `GET /api/users/:id`
+- `/api/users`
+- `/api/users`
+
+---
+
+### Example Habit JSON
+
+```
+{
+    "id": number,
+    "habit: string,
+    "user": string,
+    "streakActive": boolean,
+    "streak": number,
+    ...
+}
+```
+
+---
+
+### Example User JSON
+
+```
+{
+    "id": number,
+    "name": string,
+    "nickname": string,
+    "email": string,
+    "password": string,
+    "habits": {
+        ...
+    }
+}
+```

@@ -17,6 +17,12 @@ Tracker is a placeholder name for habit tracker project.
 
 ---
 
+## Tools
+
+- Using [GitHub CLI](https://cli.github.com/)
+
+---
+
 ### Tracker API
 
 - `/api/habits` - Endpoint for manipulating Habits.

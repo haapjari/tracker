@@ -34,6 +34,14 @@ Tracker is a placeholder name for Habit Tracker Application -project.
 
 ## How-to-Develop
 
+- Pull Requests: TBD
+- `git add .`
+- `git commit -m "<COMMIT MESSAGE>"
+- `git tag <VERSION NUMBER>`
+- `git push`
+
+
+
 ---
 
 ### API Endpoints

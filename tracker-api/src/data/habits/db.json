@@ -1,0 +1,10 @@
+{
+    "habits": [
+        {
+        "id": 1,
+        "habit": "exercise",
+        "streakActive": true,
+        "streak": 5
+        }
+    ]
+}

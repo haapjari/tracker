@@ -22,9 +22,9 @@ Tracker is a placeholder name for Habit Tracker Application -project.
 ## Tools
 
 - Using [GitHub CLI](https://cli.github.com/)
-- Using GitHub Issues
-- Using GitHub Actions
-- Using Semantic Versioning
+- Using [GitHub Issues](https://github.com/features/issues)
+- Using [GitHub Actions](https://github.com/features/actions)
+- Using [Semantic Versioning](https://semver.org/)
 
 ---
 
@@ -61,8 +61,9 @@ Tracker is a placeholder name for Habit Tracker Application -project.
 
 - `GET /api/users`
 - `GET /api/users/:id`
-- `/api/users`
-- `/api/users`
+- `POST /api/users`
+- `PUT /api/users/:id`
+- `DELETE /api/users/:id`
 
 ---
 

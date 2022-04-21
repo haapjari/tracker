@@ -1,3 +1,4 @@
+/* eslint-disable */
 const supertest = require('supertest');
 const app = require('../../app');
 
@@ -6,10 +7,9 @@ const api = supertest(app);
 // TODO: Include Body Checks
 
 const testHabitData: any = {
-    id: 1,
     habit: 'exercise',
     streakActive: true,
-    streak: 6
+    streak: 6,
 };
 
 describe('/api/habits', () => {
@@ -25,12 +25,22 @@ describe('/api/habits', () => {
         await api.get('/api/habits/1').expect('Content-Type', 'application/json; charset=utf-8').expect(200);
     });
 
+    test('POST /api/habits/:id', async () => {
+        await api
+            .post('/api/habits', testHabitData)
+            .expect('Content-Type', 'application/json; charset=utf-8')
+            .expect(200);
+    });
+
     test('DELETE /api/habits/:id', async () => {
         await api.delete('/api/habits/1').expect('Content-Type', 'application/json; charset=utf-8').expect(200);
     });
 
     test('PUT /api/habits/:id', async () => {
-        await api.put('/api/habits/1', testHabitData).expect('Content-Type', 'application/json; charset=utf-8').expect(200);
+        await api
+            .put('/api/habits/1', testHabitData)
+            .expect('Content-Type', 'application/json; charset=utf-8')
+            .expect(200);
     });
 
     afterAll(() => {

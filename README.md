@@ -13,7 +13,9 @@ Tracker is a placeholder name for Habit Tracker Application -project.
 
 ## Technology
 
-- MERN (MongoDB - Express - React - Node) - Stack
+- **M**ongoDB - **E**xpress - **R**eact - **N**ode -stack.
+- `tracker-ui` - React Application
+- `tracker-api` - Express and Node.js Application, with TypeScript
 
 ---
 

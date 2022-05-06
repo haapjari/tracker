@@ -4,8 +4,8 @@
         "target": "ES6",
         "forceConsistentCasingInFileNames": true,
         "esModuleInterop": true,
-        "outDir": "./dist",
-        "rootDir": "./src",
+        "outDir": "build",
+        "rootDir": "src",
         "skipLibCheck": true,
         "strict": true,
         "sourceMap": true

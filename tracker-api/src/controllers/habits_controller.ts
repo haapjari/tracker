@@ -1,4 +1,4 @@
-import { Config } from '../utils/config';
+// import { Config } from '../utils/config';
 import { Request, Response, NextFunction } from 'express';
 import axios, { AxiosResponse } from 'axios';
 
@@ -9,7 +9,8 @@ interface Habit {
     streak: Number | null;
 }
 
-const BASE_URL: string = Config.BASE_URL;
+// const BASE_URL: string = Config.BASE_URL;
+const BASE_URL: string = 'http://localhost:3000';
 
 const getHabits = async (req: Request, res: Response, next: NextFunction) => {
     const result: AxiosResponse = await axios.get(`${BASE_URL}/habits`);

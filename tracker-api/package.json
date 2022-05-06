@@ -2,15 +2,15 @@
   "name": "tracker-api",
   "version": "0.0.1",
   "description": "CRUD Habit Trackers API",
-  "main": "app.js",
   "scripts": {
     "test": "NODE_ENV=test npx jest --coverage --verbose --runInBand --forceExit",
     "test:watch": "npx jest --watch",
-    "dev": "nodemon src/app.ts",
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
     "build": "prettier --write src/ && tsc",
     "lint": "npx eslint . --ext .ts",
     "format": "npx eslint . --ext .ts --fix",
-    "habits-server:dev": "json-server --watch src/data/habits/db.json"
+    "habits-server:dev": "json-server --watch src/data/habits/db.json",
+    "start": "NODE_ENV=production npx tsc && node build/server.js"
   },
   "repository": {
     "type": "git",
@@ -41,7 +41,8 @@
     "morgan": "^1.10.0",
     "prettier": "^2.6.2",
     "supertest": "^6.2.2",
-    "ts-jest": "^27.1.4"
+    "ts-jest": "^27.1.4",
+    "ts-node-dev": "^1.1.8"
   },
   "dependencies": {
     "@types/axios": "^0.14.0",

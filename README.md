@@ -24,7 +24,6 @@ Tracker is a placeholder name for Habit Tracker Application -project.
 - Using [GitHub CLI](https://cli.github.com/)
 - Using [GitHub Issues](https://github.com/features/issues)
 - Using [GitHub Actions](https://github.com/features/actions)
-- Using [Semantic Versioning](https://semver.org/)
 
 ---
 
@@ -41,8 +40,6 @@ Tracker is a placeholder name for Habit Tracker Application -project.
 - `git commit -m "<COMMIT MESSAGE>"
 - `git tag <VERSION NUMBER>`
 - `git push`
-
-
 
 ---
 

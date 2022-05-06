@@ -1,4 +1,7 @@
-export namespace Config {
-    export const PORT: number = 8080;
-    export const BASE_URL: string = 'http://localhost:3000';
-}
+const PORT: number = 8080;
+const BASE_URL: string = 'http://localhost:3000';
+
+module.exports = {
+    PORT,
+    BASE_URL
+};

@@ -1,12 +1,13 @@
 import http from 'http';
 import express, { Express } from 'express';
-import { Config } from '../src/utils/config';
+// import config = require('../src/utils/config');
 import habitsRouter from './routes/habits_router';
 import morgan from 'morgan';
 
 const router: Express = express();
 
-const PORT: number = Config.PORT;
+// const PORT: number = config.PORT;
+const PORT: number = 8080;
 // const BASE_URL: string = Constants.BASE_URL;
 
 router.use(morgan('dev'));
@@ -29,13 +30,7 @@ router.use(express.json());
 // });
 
 router.use('/api/habits', habitsRouter);
-
-router.use((req, res, next) => {
-    const error = new Error('NOT_SUPPORTED');
-    return res.status(404).json({
-        message: error.message
-    });
-});
+// router.use('/api/users', usersRouter);
 
 const httpServer = http.createServer(router);
 httpServer.listen(PORT, () => console.log(`Tracker API Listening Port: ${PORT}`));
